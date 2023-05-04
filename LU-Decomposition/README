@@ -1,0 +1,18 @@
+This function performs LU decomposition with pivoting on a given square matrix A. 
+The LU decomposition decomposes a matrix into a lower triangular matrix (L) and an upper triangular matrix (U), such that A = L*U. 
+The function also returns a permutation matrix (P) that records the row exchanges.
+
+Inputs:
+  A: coefficient matrix
+
+Outputs:
+  L: lower triangular matrix
+  U: upper triangular matrix
+  P: permutation matrix
+
+Example of how to use the function:
+Suppose you want to perform LU decomposition with pivoting on the matrix A = [3 6 9; 2 5 1; 7 4 8]. 
+You can use the function as follows:
+  A = [3 6 9; 2 5 1; 7 4 8];
+  luFactor(A);
+The function will return the lower triangular matrix L, the upper triangular matrix U, and the permutation matrix P. You can then verify that A = LUP^(-1) by computing LUP^(-1) and comparing it with A.
