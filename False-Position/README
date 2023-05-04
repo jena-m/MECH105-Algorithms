@@ -1,0 +1,25 @@
+This function uses the false position method to find the root of a given function within a user-defined interval. 
+The purpose of the function is to perform linear regression to approximate the root of a function.
+
+Inputs:
+  func: the function to be evaluated.
+  xl: the lower bound of the interval.
+  xu: the upper bound of the interval.
+  es (optional): the desired relative error (default value: 0.0001).
+  maxit (optional): the maximum number of iterations (default value: 200).
+  varargin: additional arguments to be passed to the function.
+
+Outputs:
+  root: the approximate root of the function.
+  fx: the function value at the root.
+  ea: the approximate relative error.
+  iter: the number of iterations performed.
+
+Example of how to use the function:
+Suppose you want to find the root of the function f(x) = x^3 + 4x^2 - 10 within the interval [1, 2] with a desired relative error of 0.01. 
+You can use the function as follows:
+
+  f = @(x) x^3 + 4*x^2 - 10;
+  falsePosition(f, 1, 2, 0.01);
+  
+The function will return the approximate root, the function value at the root, the approximate relative error, and the number of iterations performed.
