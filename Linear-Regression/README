@@ -1,0 +1,19 @@
+linearRegression Computes the linear regression of a data set
+Inputs:
+  x: x-values for our data set
+  y: y-values for our data set
+
+Outputs:
+  fX: x-values with outliers removed
+  fY: y-values with outliers removed
+  slope: slope from the linear regression y=mx+b
+  intercept: intercept from the linear regression y=mx+b
+  Rsquared: R^2, a.k.a. coefficient of determination
+  
+To use the function, you would call it with the x and y values of the data set you want to analyze. 
+For example:
+  x = [1, 2, 3, 4, 5];
+  y = [2, 4, 5, 4, 6];
+  linearRegression(x, y);
+In this case, fX and fY will be arrays with outliers removed, slope and intercept will be the slope and y-intercept of the linear regression line,
+respectively, and Rsquared will be the R-squared value of the linear regression.
